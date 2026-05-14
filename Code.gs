@@ -3,7 +3,7 @@ const MODEL = 'gemini-2.5-pro';
 
 function doGet() {
   return HtmlService.createHtmlOutputFromFile('Index')
-    .setTitle('Gemini Chat');
+    .setTitle('Chat');
 }
 
 function callGemini(prompt) {
@@ -34,7 +34,7 @@ function callGemini(prompt) {
   const data = JSON.parse(text);
 
   if (code !== 200) {
-    throw new Error(data.error?.message || 'Gemini request failed');
+    throw new Error(data.error?.message || 'Chat request failed');
   }
 
   return (

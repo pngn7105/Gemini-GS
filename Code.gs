@@ -3,7 +3,7 @@ const MODEL = 'gemini-3-flash-preview';
 
 function doGet() {
   return HtmlService.createHtmlOutputFromFile('Index')
-    .setTitle('Chat');
+    .setTitle('Google Script');
 }
 
 function callGemini(prompt) {

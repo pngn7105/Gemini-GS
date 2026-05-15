@@ -1,5 +1,5 @@
 const GEMINI_API_KEY = 'PASTE_YOUR_GEMINI_API_KEY_HERE';
-const MODEL = 'gemini-3-flash-preview';
+const MODEL = 'gemini-2.5-flash';
 
 function doGet() {
   return HtmlService.createHtmlOutputFromFile('Index')
@@ -16,7 +16,8 @@ function callGemini(prompt) {
           { text: prompt }
         ]
       }
-    ]
+    ],
+    tools: [{ google_search: {} }]  // ← added by claude
   };
 
   const response = UrlFetchApp.fetch(url, {

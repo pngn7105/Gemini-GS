@@ -1,5 +1,5 @@
 const GEMINI_API_KEY = 'PASTE_YOUR_GEMINI_API_KEY_HERE';
-const MODEL = 'gemini-2.5-pro';
+const MODEL = 'gemini-3-flash-preview';
 
 function doGet() {
   return HtmlService.createHtmlOutputFromFile('Index')

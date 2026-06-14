@@ -9,4 +9,4 @@ new features include:
 
 NOTE: some of the contributions to the upstream of this fork were made by AI
 
-the app is referred to as bard in itself to avoid suspicion(what google's ai used to be called)
+the app is referred to as bard cause funni (for the uncultured: what gemini used to be called)
